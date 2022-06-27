@@ -1,10 +1,13 @@
 import React from "react";
+import PageTitle from "../../components/layout/PageTitle";
 
 function NotFound(param) {
   return (
-    <div className="NotFound">
-      <h1>404</h1>
-      <p>Not Found</p>
+    <div className="Home">
+      <PageTitle error
+            title="404"
+            subtitle="Not Found" 
+      ></PageTitle>
     </div>
   );
 }
