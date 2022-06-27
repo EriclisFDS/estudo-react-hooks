@@ -3,6 +3,14 @@ import './Content.css';
 import { Routes, Route } from "react-router-dom";
 
 import Home from '../../views/examples/Home';
+import UseState from '../../views/examples/UseState';
+import UseEffect from '../../views/examples/UseEffect';
+import UseRef from '../../views/examples/UseRef';
+import UseCallback from '../../views/examples/UseCallback';
+import UseMemo from '../../views/examples/UseMemo';
+import UseContext from '../../views/examples/UseContext';
+import UseReducer from '../../views/examples/UseReducer';
+import UseCustom from '../../views/examples/UseCustom';
 import About from '../../views/examples/About';
 import Param from '../../views/examples/Param';
 import NotFound from '../../views/examples/NotFound';
@@ -12,10 +20,18 @@ function Content(param) {
   return (
     <main className="Content">
       <Routes>
-        <Route exact path='/' element={<Home/>}></Route>
-        <Route path='/about' element={<About/>}></Route>
-        <Route path='/param/:id' element={<Param/>}></Route>
-        <Route path='*' element={<NotFound/>}></Route>
+        <Route exact path='/' element={ <Home/> }></Route>
+        <Route path='/useState' element={ <UseState/> }></Route>
+        <Route path='/useEffect' element={ <UseEffect/> }></Route>
+        <Route path='/useRef' element={ <UseRef/> }></Route>
+        <Route path='/useCallback' element={ <UseCallback/> }></Route>
+        <Route path='/useMemo' element={ <UseMemo/> }></Route>
+        <Route path='/useContext' element={ <UseContext/> }></Route>
+        <Route path='/useReducer' element={ <UseReducer/> }></Route>
+        <Route path='/useCustom' element={ <UseCustom/> }></Route>
+        <Route path='/about' element={ <About/> }></Route>
+        <Route path='/param/:id' element={ <Param/> }></Route>
+        <Route path='*' element={ <NotFound/> }></Route>
       </Routes>
     </main>
   );
