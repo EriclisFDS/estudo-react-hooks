@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ButtonsCallback(props) {
+function ButtonsCallback(props) {
     
     console.log("render");
     
@@ -12,3 +12,5 @@ export default function ButtonsCallback(props) {
         </div>
     );
 }
+
+export default React.memo(ButtonsCallback);
